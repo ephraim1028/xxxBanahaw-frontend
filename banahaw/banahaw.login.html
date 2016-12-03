@@ -4,38 +4,20 @@
 	<title>lBanahaw Log-in</title>
 	<link rel="stylesheet" type="text/css" href="banahaw.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="carousel.css">
+
 
 </head>
 <body>
-
-	<div id="login-div">
-	
-		</br></br>
-		<img src="banahaw.png"></br>
-		<input class="input" type="text" name="user"> </br></br>
+	<div id="background">
 		
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		<div id="login-div">
+				</br></br>
+				<img id="logo" src="banahaw.png"></br>
+				<p>USERNAME</p><input class="input" type="text" name="user" size="50" height="20"> </br></br>
+				<p>PASSWORD</p><input class="input" type="text" name="password" size="50" >
+		</div>
+	   
 
 
 
@@ -43,5 +25,33 @@
 
 
 	</div>
+
+
+
+<script src="jquery-3.1.1.js"></script>
+<script>
+$(document).ready(function(){
+var header = $('#background');
+
+var backgrounds = new Array(
+    'url("background.jpg")'
+  , 'url("background2-11.jpg")'
+  
+);
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 5000);
+
+header.css('background-image', backgrounds[0]);
+});
+</script>
+
+
 </body>
 </html>

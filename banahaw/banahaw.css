@@ -1,0 +1,15 @@
+#login-div{
+	height: 500px;
+	width: 50%;
+	margin: auto;
+	background-color: rgba(0,0,0,.3);
+	padding: 20px;
+	margin-top: 50px;
+}
+#user{
+	margin: auto;
+}
+body{
+	background: url("background.jpg") no-repeat;
+	background-size: 100%;
+}

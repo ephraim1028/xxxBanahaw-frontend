@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lBanahaw Log-in</title>
+	<link rel="stylesheet" type="text/css" href="../static/banahaw.css">
+	<link rel="stylesheet" type="text/css" href="../static/bootstrap.css">
+
+
+</head>
+<body>
+	<div id="background">
+
+		      
+     		  </div>
+	   <div class="jumbotron">
+        		<img id="logo" src="../others/banahaw.png"></br>
+				<p>USERNAME</p><input class="input form-control" type="text" name="user" height="20" placeholder="username" autofocus> </br>
+				<p>PASSWORD</p><input class="input form-control" type="password" name="password" placeholder="password" ></br>
+				<button type="button" class="btn btn-lg btn-success">ENTER</button>
+			 </div>	
+		</div>
+				
+
+
+
+<script src="../static/jquery-3.1.1.js"></script>
+<script>
+$(document).ready(function(){
+var header = $('#background');
+
+var backgrounds = new Array(
+    'url("../others/background.jpg")'
+  , 'url("../others/background2.jpg")'
+  , 'url("../others/background3.jpg")'
+  , 'url("../others/background4.jpg")'  
+);
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 5000);
+
+header.css('background-image', backgrounds[0]);
+});
+</script>
+
+
+</body>
+</html>

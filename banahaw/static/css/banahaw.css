@@ -1,4 +1,5 @@
-@font-face{font-family: "DK Blue Sheep";src:url("dk_blue_sheep/DK Blue Sheep.otf")format("opentype");}
+@font-face{font-family: "DK Blue Sheep";
+	src:url("dk_blue_sheep/DK Blue Sheep.otf") format("opentype");}
 
 #background{
 	background: url("background.jpg") no-repeat;
@@ -16,7 +17,6 @@
 	font-family: "DK Blue Sheep";
 	width: 27em !important;
 }
-
 p{
 	font-family: "DK Blue Sheep";
 	font-weight: 300em;
@@ -43,19 +43,29 @@ input.active{
 	margin-left: 35%;
 	-webkit-border-radius: 10px;
 }
+#error{
+	width: 85%;
+	height: 10%;
+	background-color: rgba(255,0,0,.5);
+	margin-top: 5%;
+	margin-left: 6%;
+	-webkit-border-radius: 10px;
+}
+
 .navbar{
 	background-color: rgba(52,141,35,.5) !important;
+	margin-bottom: none;
 }
 a{
 	color: black !important;
 }
-.navbar-inverse .navbar-nav > .active >  a{
-	background-color: rgba(52,141,35,.5) !important;
-	color: white !important;
-}
+
 #daily{
 	height: 500px;
 	width: 100%;
 	background-color: red;
 	margin-top: 1000px;
+}
+.nav-sidebar{
+	height: 100%;
 }

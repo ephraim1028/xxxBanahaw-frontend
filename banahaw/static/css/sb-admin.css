@@ -9,8 +9,12 @@
 body {
     margin-top: 100px;
     background-color: #222;
-}
+    overflow-y:hidden;
 
+}
+#logo{
+    margin-top: -10px;
+}
 @media(min-width:768px) {
     body {
         margin-top: 50px;
@@ -25,6 +29,7 @@ body {
     width: 100%;
     padding: 0;
     background-color: #fff;
+    height:100%;
 }
 
 .huge {
@@ -116,13 +121,14 @@ ul.alert-dropdown {
     .side-nav {
         position: fixed;
         top: 51px;
-        left: 225px;
+        /*works on chrome not in mozilla
+        left: 225px;*/
         width: 225px;
         margin-left: -225px;
         border: none;
         border-radius: 0;
         overflow-y: auto;
-        background-color: #222;
+        background-color: #669966;
         bottom: 0;
         overflow-x: hidden;
         padding-bottom: 40px;
@@ -135,7 +141,7 @@ ul.alert-dropdown {
     .side-nav li a:hover,
     .side-nav li a:focus {
         outline: none;
-        background-color: #000 !important;
+        background-color: #DFF0D8 !important;
     }
 }
 
@@ -147,7 +153,7 @@ ul.alert-dropdown {
     display: block;
     padding: 10px 15px 10px 38px;
     text-decoration: none;
-    color: #999;
+    color: #000;
 }
 
 .side-nav>li>ul>li>a:hover {

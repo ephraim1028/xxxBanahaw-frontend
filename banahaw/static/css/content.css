@@ -1,0 +1,40 @@
+#div1{
+	
+	height:700px ;
+	width: 100%;
+	padding: 5px;
+}
+#div2{
+	background-color: green;
+	height:700px ;
+	width: 100%;
+}
+#div3{
+	background-color: blue;
+	height:700px ;
+	width: 100%;
+}
+input{
+	width: 20% !important;
+}
+.alert{
+	width: 22%;
+	height: 10%;
+}
+#chck{
+	margin-top: 3px;
+	margin-bottom: 8px;
+	background-color: #DFF0D8;
+}
+.form{
+	float: right;
+	height: 700px;
+	width: 1000px;
+}
+.fillup{
+	size: 50px;
+	column-span: 2;
+}
+select{
+	width: 250px;
+}

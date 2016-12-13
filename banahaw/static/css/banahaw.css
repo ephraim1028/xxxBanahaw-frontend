@@ -1,5 +1,3 @@
-@font-face{font-family: "DK Blue Sheep";
-	src:url("dk_blue_sheep/DK Blue Sheep.otf") format("opentype");}
 
 #background{
 	background: url("background.jpg") no-repeat;
@@ -16,7 +14,7 @@
 	width: 27em !important;
 	}
 p{
-	font-family: "DK Blue Sheep";
+	font-family: "Arial";
 	font-weight: 300em;
 	}
 /*body {overflow-y:hidden}*/

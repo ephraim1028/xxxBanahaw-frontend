@@ -3,128 +3,32 @@
 <head>
 <link href="../static/css/content.css" rel="stylesheet">
 <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+<link href='../static/css/fullcalendar.min.css' rel='stylesheet' />
+<link href='../static/css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+<script src='../static/js/moment.min.js'></script>
+<script src='../static/js/jquery.min.js'></script>
+<script src='../static/js/jquery-ui.min.js'></script>
+<script src='../static/js/fullcalendar.min.js'></script>
 	<title></title>
 </head>
 <body>
 
-<div id="div1">
-	<div class="form">
-		<div class="table-responsive">
-            <table class="table table-striped">
-              
-              <tbody>
-                <tr>
-                  <td>Name</td>
-                  <td></td>
-                  <td><input class="fillup" type="text" name=""></td>
-                  
-                </tr>
-                <tr>
-                  <td>Branch</td>
-                  <td></td>
-                  <td><input class="fillup" type="text" name=""></td>
-                  
-                </tr>
-                <tr>
-                  <td>Time/Date</td>
-                  <td></td>
-                  <td><input class="fillup" type="datetime-local" name=""  size="60"></td>
-                  
-                </tr>
-                <tr>
-                  <td>Regular Services</td>
-                  <td></td>
-                  <td><select>
-                  	 <option value="">.....</option>
-                  	 <option value="">Relaxing Swedish Massage</option>
-  					 <option value="">5-in-1 Signature Massage</option>
-  					 <option value="">Hot Stone Massage</option>
-  					 <option value="">Shiatsu Massage</option>
-                  </select></td>
-                  
-                </tr>
-                <tr>
-                  <td>Add-ons</td>
-                  <td></td>
-                  <td><select>
-                  	<option value="">.....</option>
-                  	<option value="">Netibo Healing</option>
-                  	<option value="">Ventusa Therapy</option>
-                  	<option value="">Cranio Sacral</option>
-                  	<option value="">Turtlewalk Massage</option>
-                  	<option value="">Steam Bath</option>
-                  	<option value="">Ear Candling</option>
-                  	<option value="">Ear Massage</option>
-                  	<option value="">Back Massage</option>
-                  	<option value="">Head Massage</option>
-                  	<option value="">Foot Scrub</option>
-                  	<option value="">Foot Reflex</option>
-                  	<option value="">Hand Scrub</option>
-                  	<option value="">Hand Reflex</option>
-                  	<option value="">Hot Stone Foot Reflex</option>
-                  	<option value="">Lower Extermeties Massage</option>
-                  	<option value="">Hair spa</option>
-                  	<option value="">Body Scrub</option>
+<p id="members"></p>
+<br><br>
+<div class="div-content">
 
-                  </select></td>
-                  
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td><textarea id="area1"></textarea></td>
-                  
-                </tr>
-                <tr>
-                  <td>Name of Attendant</td>
-                  <td></td>
-                  <td><select>
-                  	<option value="">.....</option>
-                  </select></td>
-                  
-                </tr>
-                <tr>
-                  <td>Total</td>
-                  <td></td>
-                  <td><textarea id="area2"></textarea></td>
-                  
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td><input type="submit" name="" value="Confirm"><input type="submit" name="" value="Cancel"></td>
-                  
-                </tr>
-                
-                
-              </tbody>
-            </table>
-          </div>
-
-	</div>
-	</div>
-
-
-
-	<div>
-		<input class="input form-control" type="text" name="" placeholder="Member Name :" autofocus="true"> 
-		<input class="input form-control" type="submit" name="" value="Check" id="chck">
+	<div id="validation">
+		<input class="input-top form-control" type="text" name="" placeholder="Member Name :" autofocus="true"> 
+		<input class="input-top form-control" type="submit" name="" value="Check" id="chck">
 	
-		<div class="alert alert-success" role="alert">
+		<div class="alert alert-success alert-top" role="alert">
         	<strong>Checking Successful!</strong><img src="../static/img/check.png">
    		</div>
-    	<div class="alert alert-danger" role="alert">
+    	<div class="alert alert-danger alert-top" role="alert">
         	<strong>Not A Member! Please try again</strong><img src="../static/img/x.png">
     	</div>
     </div>
-</div>
 
-<p id="member2">2</p>
-<br><br>
-
-<div id="div2">
-
-	<div id="div1">
 	<div class="form">
 		<div class="table-responsive">
             <table class="table table-striped">
@@ -133,25 +37,37 @@
                 <tr>
                   <td>Name</td>
                   <td></td>
-                  <td><input class="fillup" type="text" name=""></td>
+                  <td><input class="input form-control" type="text" name=""></td>
                   
                 </tr>
                 <tr>
                   <td>Branch</td>
                   <td></td>
-                  <td><input class="fillup" type="text" name=""></td>
+                  <td><input class="input form-control" type="text" name=""></td>
                   
                 </tr>
                 <tr>
                   <td>Time/Date</td>
                   <td></td>
-                  <td><input class="fillup" type="datetime-local" name=""  size="60"></td>
+                  <td><input class="input form-control" type="datetime-local" name=""  size="60"></td>
                   
                 </tr>
                 <tr>
                   <td>Regular Services</td>
                   <td></td>
-                  <td><select>
+                  <td><select class="input form-control">
+                  	 <option value="">.....</option>
+                  	 <option value="">Relaxing Swedish Massage</option>
+  					 <option value="">5-in-1 Signature Massage</option>
+  					 <option value="">Hot Stone Massage</option>
+  					 <option value="">Shiatsu Massage</option>
+                  </select></td>
+                  
+                </tr>
+                <tr>
+                  <td>Healing Packages</td>
+                  <td></td>
+                  <td><select class="input form-control">
                   	 <option value="">.....</option>
                   	 <option value="">Relaxing Swedish Massage</option>
   					 <option value="">5-in-1 Signature Massage</option>
@@ -163,7 +79,7 @@
                 <tr>
                   <td>Add-ons</td>
                   <td></td>
-                  <td><select>
+                  <td><select class="input form-control">
                   	<option value="">.....</option>
                   	<option value="">Netibo Healing</option>
                   	<option value="">Ventusa Therapy</option>
@@ -189,13 +105,13 @@
                 <tr>
                   <td></td>
                   <td></td>
-                  <td><textarea id="area1"></textarea></td>
+                  <td><textarea class="input form-control" id="area1"></textarea></td>
                   
                 </tr>
                 <tr>
                   <td>Name of Attendant</td>
                   <td></td>
-                  <td><select>
+                  <td><select class="input form-control">
                   	<option value="">.....</option>
                   </select></td>
                   
@@ -203,13 +119,13 @@
                 <tr>
                   <td>Total</td>
                   <td></td>
-                  <td><textarea id="area2"></textarea></td>
+                  <td><textarea class="input form-control" id="area2"></textarea></td>
                   
                 </tr>
                 <tr>
                   <td></td>
                   <td></td>
-                  <td><input type="submit" name="" value="Confirm"><input type="submit" name="" value="Cancel"></td>
+                  <td><input class="input form-control" type="submit" name="" value="Confirm"><input class="input form-control" type="submit" name="" value="Cancel"></td>
                   
                 </tr>
                 
@@ -219,20 +135,129 @@
           </div>
 
 	</div>
-	
-
-
-	<div>
-		<input class="input form-control" type="text" name="" placeholder="Customer Name :" autofocus="true"> 
-		
-    </div>
 </div>
 
-<p id="member3">3</p>
+<p id="nonmember">2</p>
 <br><br>
+<div class="div-content">
 
-<div id="div3">
-	<div class="form">
+		<div id="customer-name">
+			<input class="input-top form-control" type="text" name="" placeholder="Customer Name :" autofocus="true"> 
+		</div>
+
+		<div class="form">
+		<div class="table-responsive">
+            <table class="table table-striped">
+              
+              <tbody>
+                <tr>
+                  <td>Name</td>
+                  <td></td>
+                  <td><input class="input form-control" type="text" name=""></td>
+                  
+                </tr>
+                <tr>
+                  <td>Branch</td>
+                  <td></td>
+                  <td><input class="input form-control" type="text" name=""></td>
+                  
+                </tr>
+                <tr>
+                  <td>Time/Date</td>
+                  <td></td>
+                  <td><input class="input form-control" type="datetime-local" name=""  size="60"></td>
+                  
+                </tr>
+                <tr>
+                  <td>Regular Services</td>
+                  <td></td>
+                  <td><select class="input form-control">
+                  	 <option value="">.....</option>
+                  	 <option value="">Relaxing Swedish Massage</option>
+  					 <option value="">5-in-1 Signature Massage</option>
+  					 <option value="">Hot Stone Massage</option>
+  					 <option value="">Shiatsu Massage</option>
+                  </select></td>
+                  
+                </tr>
+                <tr>
+                  <td>Healing Packages</td>
+                  <td></td>
+                  <td><select class="input form-control">
+                  	 <option value="">.....</option>
+                  	 <option value="">Relaxing Swedish Massage</option>
+  					 <option value="">5-in-1 Signature Massage</option>
+  					 <option value="">Hot Stone Massage</option>
+  					 <option value="">Shiatsu Massage</option>
+                  </select></td>
+                  
+                </tr>
+                <tr>
+                  <td>Add-ons</td>
+                  <td></td>
+                  <td><select class="input form-control">
+                  	<option value="">.....</option>
+                  	<option value="">Netibo Healing</option>
+                  	<option value="">Ventusa Therapy</option>
+                  	<option value="">Cranio Sacral</option>
+                  	<option value="">Turtlewalk Massage</option>
+                  	<option value="">Steam Bath</option>
+                  	<option value="">Ear Candling</option>
+                  	<option value="">Ear Massage</option>
+                  	<option value="">Back Massage</option>
+                  	<option value="">Head Massage</option>
+                  	<option value="">Foot Scrub</option>
+                  	<option value="">Foot Reflex</option>
+                  	<option value="">Hand Scrub</option>
+                  	<option value="">Hand Reflex</option>
+                  	<option value="">Hot Stone Foot Reflex</option>
+                  	<option value="">Lower Extermeties Massage</option>
+                  	<option value="">Hair spa</option>
+                  	<option value="">Body Scrub</option>
+
+                  </select></td>
+                  
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><textarea class="input form-control" id="area1"></textarea></td>
+                  
+                </tr>
+                <tr>
+                  <td>Name of Attendant</td>
+                  <td></td>
+                  <td><select class="input form-control">
+                  	<option value="">.....</option>
+                  </select></td>
+                  
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td></td>
+                  <td><textarea class="input form-control" id="area2"></textarea></td>
+                  
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><input class="input form-control"type="submit" name="" value="Confirm"><input class="input form-control" type="submit" name="" value="Cancel"></td>
+                  
+                </tr>
+                
+                
+              </tbody>
+            </table>
+          </div>
+
+		</div>
+</div>
+
+
+<p id="addmember">3</p>
+<br><br>
+<div class="div-content">
+	<div class="form2">
 		<div class="table-responsive">
             <table class="table table-striped">
               
@@ -240,7 +265,7 @@
                 <tr>
                   <td>Type</td>
                   <td></td>
-                  <td><select>
+                  <td><select class="input form-control">
                   	<option>Personalized</option>
                   	<option>Family</option>
                   </select></td>
@@ -249,39 +274,60 @@
                 <tr>
                   <td>Branch</td>
                   <td></td>
-                  <td><select></select></td>
+                  <td><select class="input form-control"></select></td>
                   
                 </tr>
                 <tr>
                   <td>Name</td>
                   <td></td>
-                  <td><input class="fillup" type="text" name=""  size="60"></td>
+                  <td><input class="input form-control" class="fillup" type="text" name="" ></td>
                   
                 </tr>
                 <tr>
-                  <td>Sub</td>
+                  <td>Sub-Member</td>
+                  <td></td>
+                  <td><input class="input form-control" class="fillup" type="text" name=""  size="60"></td>
+                  
+                </tr>
+                
+                <tr>
                   <td></td>
                   <td></td>
+                  <td><input class="input form-control" class="fillup" type="text" name=""  size="60"></td>
+                  
+                </tr>
+
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><input class="input form-control" class="fillup" type="text" name=""  size="60"></td>
                   
                 </tr>
                 
                 <tr>
                   <td></td>
                   <td></td>
-                  <td><textarea id="area1"></textarea></td>
+                  <td><input class="input form-control" class="fillup" type="text" name=""  size="60"></td>
                   
                 </tr>
-                
-                <tr>
-                  <td>Total</td>
-                  <td></td>
-                  <td><textarea id="area2"></textarea></td>
-                  
-                </tr>
+
                 <tr>
                   <td></td>
                   <td></td>
-                  <td><input type="submit" name="" value="Confirm"><input type="submit" name="" value="Cancel"></td>
+                  <td><input class="input form-control" class="fillup" type="text" name=""  size="60"></td>
+                  
+                </tr>
+
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><textarea class="input form-control" id="area2"></textarea></td>
+                  
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><input class="input form-control" type="submit" name="" value="Confirm"><input class="input form-control" type="submit" name="" value="Cancel"></td>
                   
                 </tr>
                 
@@ -291,18 +337,237 @@
           </div>
 
 	</div>
+</div>
+
+
+
+<p id="deletemember">4</p>
+<br><br>
+<div class="div-content">
+	<div class="form2">
+		<div class="table-responsive">
+            <table class="table table-striped">
+              
+              <tbody>
+                <tr>
+                  <td>Name</td>
+                  <td></td>
+                  <td><input class="input form-control" type="text" name=""></td>
+                  
+                </tr>
+                <tr>
+                  <td>Branch</td>
+                  <td></td>
+                  <td><input class="input form-control" type="text" name=""></td>
+                  
+                </tr>
+                <tr>
+                  <td>Info</td>
+                  <td></td>
+                  <td><textarea class="input form-control" id="area2"></textarea></td>
+                  
+                </tr>
+                
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><input class="input form-control" type="submit" name="" value="Delete"><input class="input form-control" type="submit" name="" value="Cancel"></td>
+                  
+                </tr>
+                <tr>
+                	<td></td>
+                	<td></td>
+                	<td><div class="alert alert-success" role="alert">
+        			<strong>Delete Successful!</strong><img src="../static/img/check.png">
+   					</div></td>
+                </tr>
+                
+              </tbody>
+            </table>
+            
+          </div>
+
+	</div>
+	</div>
+
+	
+<p id="user">5</p>
+<br><br>
+<div class="div-content">
+	<ul class="tab">
+		<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'add')" id="defaultOpen">Add</a></li>
+  		<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'delete')">Delete</a></li>
+	</ul>
+	<div id="delete" class="form3 tabcontent">
+		<div class="table-responsive">
+            <table class="table table-striped"">
+              
+              <tbody>
+              	
+              	<tr>
+                  <td colspan="3">Delete User</td> 
+                </tr>
+                
+                <tr>
+                  <td>Name</td>
+                  <td colspan="3"><input class="input form-control" type="text" name=""></td>
+                </tr>
+                
+                <tr>
+                  <td>Branch</td>
+                  <td colspan="3"><input class="input form-control" type="text" name=""></td>
+                </tr>
+                
+                
+                <tr>
+                  <td></td>
+                  
+                  <td colspan="3"><input id="button1" class="input form-control" type="submit" name="" value="Delete"><input class="input form-control" type="submit" name="" value="Cancel"></td>
+                  </tr>
+                
+                <tr>
+                	<td></td>
+                  	
+                	<td><div class="alert alert-success" role="alert">
+        			<strong>Delete Successful!</strong><img src="../static/img/check.png">
+   					</div></td>
+   					
+                </tr>
+                
+              </tbody>
+            </table>
+            
+          </div>
+        </div>
+    <div id="add" class="form3 tabcontent">
+		<div class="table-responsive">
+            <table class="table table-striped">
+              
+              <tbody>
+              	<tr>
+                  <td colspan="3">Add User</td> 
+                </tr>
+                
+                <tr>
+                  <td>Username</td>
+                  <td colspan="4"><input class="input form-control" type="text" name=""></td>
+                </tr>
+                
+                <tr>
+                  <td>Password</td>
+                  <td colspan="3"><input class="input form-control" type="text" name=""></td>
+                </tr>
+                
+                <tr>
+                  <td>Re-Type Pass</td>
+              	  <td colspan="3"><input class="input form-control" type="text" name=""></td>
+                </tr>
+               
+                
+                <tr>
+                  <td></td>
+                  
+                  <td colspan="3"><input id="button1" class="input2 form-control" type="submit" name="" value="Save"><input  class="input2 form-control" type="submit" name="" value="Cancel"></td>
+                  </tr>
+                
+                <tr>
+                	<td></td>
+                	<td><div class="alert alert-success" role="alert">
+        			<strong>Add Successful!</strong><img src="../static/img/check.png">
+   					</div></td>
+                </tr>
+                
+              </tbody>
+            </table>
+            
+        </div>
+	</div>
+</div>
+	
+<p id="promo">6</p>
+<br><br>
+<div class="div-content">
+	<div class="form2">
+		<div class="table-responsive promo-table">
+            <table class="table table-striped">
+              
+              <tbody>
+                <tr>
+                  <td>Date</td>
+                  <td></td>
+                  <td><input class="input form-control" type="datetime-local" name=""></td>
+                  
+                </tr>
+                <tr>
+                  <td>Regular Services</td>
+                  <td></td>
+                  <td><select class="input form-control select-promo"></select></td>
+                  <td><input class="input form-control" id="percent" type="text" name="">%</td>
+                  
+                </tr>
+                <tr>
+                  <td>Add-ons</td>
+                  <td></td>
+                  <td><select class="input form-control select-promo"></select></td>
+                  <td><input class="input form-control" id="percent" type="text" name="">%</td>
+                  
+                </tr>
+                
+                <tr>
+                  <td>Healing Packages</td>
+                  <td></td>
+                  <td><select class="input form-control select-promo"></select></td>
+                  <td><input class="input form-control" id="percent" type="text" name="">%</td>
+                  
+                </tr>
+                
+                <tr>
+                  <td></td>
+                  
+                  <td colspan="3"><input id="button1" class="input2 form-control" type="submit" name="" value="Save"><input  class="input2 form-control" type="submit" name="" value="Cancel"></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            
+          </div>
+
+	</div>
+	</div>
+
+<p id="reserve">7</p>
+<br><br>
+<div class="div-content">
+	<div id="form2">
+		
+
+
 	</div>
 </div>
 
 
-	
 
+<script>
+function openTab(evt, tabName) {
+    
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+	tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+	document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+</script>
 
-
-</div>
-
-
-
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 
 </body>
 </html>

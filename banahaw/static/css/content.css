@@ -1,43 +1,40 @@
-#div1{
+.div-content{
 	
 	height:700px ;
 	width: 100%;
 	padding: 5px;
 }
-#div2{
-	height:700px ;
-	width: 100%;
-}
-#div3{
-	
-	height:700px ;
-	width: 100%;
-}
-#div4{
-	
-	height:700px ;
-	width: 100%;
+.input-top{
+	width: 80% !important;
 }
 input{
-	width: 20% !important;
+	width: 30% !important;
+}
+.alert-top{
+	width: 80%;
+	height: 10%;
 }
 .alert{
-	width: 22%;
-	height: 10%;
+	width: auto;
 }
 #chck{
 	margin-top: 3px;
 	margin-bottom: 8px;
-	background-color: #DFF0D8;
+}
+#validation{
+	float: left;
+	width: 30%;
+}
+#customer-name{
+	float: left;
+	width: 30%;
 }
 .form{
 	float: right;
 	height: 700px;
-	width: 1000px;
+	width: 70%;
 }
-.fillup{
-	width: 20px;
-}
+
 select{
 	width: 250px;
 }
@@ -48,4 +45,58 @@ select{
 #area2{
 	height: 150px;
 	width: 450px;
+}
+#button1{
+	float:left;
+}
+.promo-table{
+	width: 50%;
+}
+#percent{
+	width: 25% !important;
+	float: left;
+}
+.select-promo{
+	float: left;
+}
+
+
+
+/*tab css*/
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }

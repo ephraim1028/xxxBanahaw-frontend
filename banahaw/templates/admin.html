@@ -60,10 +60,10 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Transactions <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="#member1">Members</a>
+                                <a href="#members">Members</a>
                             </li>
                             <li>
-                                <a href="#member2">Non-Members</a>
+                                <a href="#nonmember">Non-Members</a>
                             </li>
                             </ul>
                     </li>
@@ -73,10 +73,10 @@
                         <ul id="demo1" class="collapse">
 
                             <li>
-                                <a href="#member3">Add Member</a>
+                                <a href="#addmember">Add Member</a>
                             </li>
                             <li>
-                                <a href="#">Delete Member</a>
+                                <a href="#deletemember">Delete Member</a>
                             </li>
                         </ul>
                     </li>
@@ -104,24 +104,17 @@
                     </li>
 
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo4"><i class="fa fa-fw fa-arrows-v"></i> Users <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo4" class="collapse">
-                            <li>
-                                <a href="">Add Users</a>
-                            </li>
-                            <li>
-                                <a href="">Delete Users</a>
-                            </li>
-                        </ul>
+                        <a href="#user"><i class="fa fa-fw fa-dashboard"></i>Users</a>
                     </li>
-
+                    <li>
+                        <a href="#promo"><i class="fa fa-fw fa-dashboard"></i>Promos</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </nav>
         <div id="page-wrapper">
-            <p id="member1"></p>
-            <br><br>
+            
             <div ng-view></div>
         </div>
         
@@ -141,7 +134,7 @@
     <script src="../static/js/bootstrap.min.js"></script>
 
     
-    
+    <!-- angularjs-route -->
     <script src="../static/js/angular.min.js"></script>
     <script src="../static/js/angular-route.js"></script>
 
@@ -152,13 +145,22 @@
      .when("/", {
         templateUrl : "content.html"
         })
-     .when("/member1", {
+     .when("/members", {
         templateUrl : "content.html"
         })
-     .when("/member2", {
+     .when("/nonmember", {
         templateUrl : "content.html"
         })
-     .when("/member3", {
+     .when("/addmember", {
+        templateUrl : "content.html"
+        })
+     .when("/deletemember", {
+        templateUrl : "content.html"
+        })
+     .when("/user", {
+        templateUrl : "content.html"
+        })
+     .when("/promo", {
         templateUrl : "content.html"
         })
     

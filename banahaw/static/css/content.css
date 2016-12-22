@@ -38,13 +38,10 @@ input{
 select{
 	width: 250px;
 }
-#area1{
-	height: 100px;
-	width: 250px;
-}
-#area2{
-	height: 150px;
-	width: 450px;
+
+#delete-t-area{
+	height: 250px;
+	width:550px;
 }
 #button1{
 	float:left;

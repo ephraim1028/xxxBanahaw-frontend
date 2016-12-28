@@ -56,7 +56,11 @@ select{
 .select-promo{
 	float: left;
 }
-
+#logout{
+	float: right;
+	margin-right: 30px;
+	margin-top: 10px;
+}
 
 
 

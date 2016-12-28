@@ -82,15 +82,7 @@
                     </li>
                     
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-arrows-v"></i> Reservations <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo2" class="collapse">
-                            <li>
-                                <a href="#">Add Reservations</a>
-                            </li>
-                            <li>
-                                <a href="#">View Reservations</a>
-                            </li>
-                        </ul>
+                        <a href="#reservation"><i class="fa fa-fw fa-dashboard"></i>Reservations</a>
                     </li>
 
                     <li>
@@ -104,7 +96,15 @@
                     </li>
 
                     <li>
-                        <a href="#user"><i class="fa fa-fw fa-dashboard"></i>Users</a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo4"><i class="fa fa-fw fa-arrows-v"></i> Users <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo4" class="collapse">
+                            <li>
+                                <a href="#adduser">Add User</a>
+                            </li>
+                            <li>
+                                <a href="#deleteuser">Delete User</a>
+                            </li>
+                            </ul>
                     </li>
                     <li>
                         <a href="#promo"><i class="fa fa-fw fa-dashboard"></i>Promos</a>
@@ -162,6 +162,9 @@
         })
      .when("/promo", {
         templateUrl : "content.html"
+        })
+     .when("/reservation", {
+        templateUrl : "testing.html"
         })
     
     });

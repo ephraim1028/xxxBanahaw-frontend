@@ -61,10 +61,17 @@ select{
 	margin-right: 30px;
 	margin-top: 10px;
 }
+.report-input{
+	width: 100% !important;
+}
+.report-table{
+	line-height: 8;
+	font-size: .8em;
+	text-align: center;
+}
 
 
 
 
-/*calendar css*/
 
 
